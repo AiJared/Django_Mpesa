@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="/stk/" method="POST">
+            {% csrf_token %}
+
+            <input name="phone" type="number" placeholder="Phone Number" value="254"> <br>
+            
+            <input name="amount" type="number" placeholder="Amount"> <br>
+            
+            <input type="submit" value="Pay Now"> <br>
+
+        </form>
+    </body>
+</html>
