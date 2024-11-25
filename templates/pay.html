@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/stk/" method="POST">
+        {% csrf_token %}
 
-    </head>
-    <body>
-        <form action="/stk/" method="POST">
-            {% csrf_token %}
+        <input name="phone" type="number" placeholder="Phone Number" value="254"> <br>
+        
+        <input name="amount" type="number" placeholder="Amount"> <br>
+        
+        <input type="submit" value="Pay Now"> <br>
 
-            <input name="phone" type="number" placeholder="Phone Number" value="254"> <br>
-            
-            <input name="amount" type="number" placeholder="Amount"> <br>
-            
-            <input type="submit" value="Pay Now"> <br>
-
-        </form>
-    </body>
+    </form>
+</body>
 </html>
