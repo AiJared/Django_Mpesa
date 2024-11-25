@@ -15,6 +15,7 @@ class AccessToken:
     request = requests.get(Credentials.apiurl, auth=HTTPBasicAuth(Credentials.consumer_key, Credentials.consumer_secret))
     access_token = json.loads(request.text)['access_token']
 
+# Handling password
 class Password:
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     shortcode = '174379'
